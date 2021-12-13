@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces</title>
+</head>
+<body>
+    <div>
+        <a href="../pagina3.html">volver a página 3</a>
+        <br>
+        <a href="../../index.html">volver al index</a>
+    </div>
+    <h1>formularios</h1>
+    <form>
+        <div>
+            <label>ingrese su nombre<input id="username" value="emmanuel"></label>
+            
+            <button>enviar</button>
+        </div>
+        <div>
+            <label>ingrese su contraseña <input type="password" name="password" required></label>
+            <button>enviar</button>
+        </div>
+        <div>
+            <label>ingrese su correo<input type="email" name="email"></label>
+            <button>enviar</button>
+        </div>
+        <div>
+            <label>tu fecha de nacimiento<input type="date" name="fecha"></label>
+            <button>enviar</button>
+        </div>
+        <div>
+            <label>tu edad<input type="number" name="edad" value="2" readonly></label>
+            <button>enviar</button>
+        </div>
+        <div>
+            <input name="mascota" placeholder="ingrese nombre de su mascota"></label>
+            
+        </div>
+        <fieldset>
+            <legend>datos personales</legend>
+            <div>
+                <label>ingrese su nombre<input id="username" value="emmanuel"></label>
+                
+                <button>enviar</button>
+            </div>
+            <div>
+                <label>ingrese su contraseña <input type="password" name="password"></label>
+                <button>enviar</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>tus pasatiempos</legend>
+            <label><input type="checkbox">cine</label>
+            <label><input type="checkbox">anime</label>
+            <label><input type="checkbox">manga</label>
+            <label><input type="checkbox">nopor</label>
+            <label><input type="checkbox">series</label>
+            <label><input type="checkbox">cartoons</label>
+        </fieldset>
+        <fieldset>
+            <legend>genero</legend>
+            <label><input type="radio" name="gender">hombre</label>
+            <label><input type="radio" name="gender">mujer</label>
+        </fieldset>
+        <fieldset>
+            <legend>opciones</legend>
+            <label for="country">escoge tu país</label>
+            <select name="country" id="country">
+                <optgroup label="América">
+                    <option value="Peru">Peru</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="México">México</option>
+                    <option value="Argentina">Argentina</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="España">España</option>
+                    <option value="Italia">Italia</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Alemania">Alemania</option>
+                </optgroup>
+                <textarea name="" id="" cols="30" rows="10" placeholder="escribe lo que quieras"></textarea>
+            </select>
+        </fieldset>
+        
+    </form>
+    <script>
+        document.getElementById('username').addEventListener('keyup',e=>{console.log(e.target.value)})
+  
+    </script>
+    
+</body>
+</html>

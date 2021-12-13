@@ -1,0 +1,687 @@
+*{
+    font-size: 30px;
+}
+body{
+    background: radial-gradient(circle, #fff, #112266);
+}
+.caja1{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background: yellow;
+}
+.caja1:active{
+    background: red;
+}
+h2{
+    background-color: aquamarine;
+    display: inline-block;
+    /* padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px; */
+    padding: 30px;
+    height: 100px;
+    width: 500px;
+    box-sizing: border-box; /*no deforma la caja ni su contenido*/
+    text-align: center; /* centra el contenido de forma automatica*/
+    margin: 10px;
+    border-radius: 20px;
+    border: 4px dashed blueviolet; 
+    box-shadow: 10px 10px 5px 0 blue;
+    text-shadow: 2px 2px 7px #000;
+    /*transform: rotate(90deg); retador*/
+}
+
+.caja2{
+    width: 300px;
+    height: 300px;
+    background: coral;
+    margin: auto;
+    border: 10px solid blue;
+
+    /* box-sizing: content-box;  borde fuera de la linea del margen*/ 
+
+}
+.caja3{
+    width: 200px;
+    height: 200px;
+    background: darkmagenta;
+    /*margin: auto;*/ 
+    /*outline: 10px solid blue; fuera de la linea de margen, pero son mover la caja*/
+    display: inline-block;
+ 
+}
+.caja3_numero7{
+    width: 200px;
+    height: 200px;
+    background: darkmagenta;
+    /*margin: auto;*/ 
+    /*outline: 10px solid blue; fuera de la linea de margen, pero son mover la caja*/
+    display: inline-block;
+    border: 10px solid red;
+}
+.caja4{
+    background: teal;
+}
+.caja5{
+    background: violet;
+    /*position: relative;
+    top: 60px;
+    left: 20px;
+    z-index: 2;*/
+}
+.caja6{
+    background: yellow;
+    /*position: relative;*/
+    z-index: 1;
+    
+}
+.caja7{
+    background: #28df99;
+}
+.cajapadre{
+    height: 300px;
+    width: 300px;
+    background: royalblue;
+    margin: 40px;
+    /*position: relative;*/
+}
+
+.cajahijo{
+    height: 120px;
+    width: 120px;
+    background: red;
+    /*position: relative;
+    top: -20px;
+    left: -20px;
+    z-index: -1; unica forma de que el hijo este encima del padre*/
+}
+
+.caja8{
+    height: 120px;
+    width: 120px;
+    background: orangered;
+}
+.caja9{
+    height: 120px;
+    width: 120px;
+    background: green;
+    /*position: absolute;*/
+    
+}
+.caja10{
+    height: 120px;
+    width: 120px;
+    background: greenyellow;
+    opacity: .2;
+}
+/*.caja-fixed{
+    background: red;
+    font-size: 40px;
+    position: fixed;   
+    top: 0px;
+    opacity: .4;
+}
+.caja-text{
+    background: #28df99;
+    position: sticky;
+    top: 0px;
+}*/
+.caja-ejemplo1{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 10px solid blue;
+    background: #28df99;
+    display: /*inline = en line peros sin poder modificar el contenido*/ /*inline-block=en linea,se puede modificar el contenido*/ inline-block;
+}
+.caja-ejemplo2{
+    height: 120px;
+    width: 120px;
+}
+.caja-ejemplo1-p{
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    border: 10px solid blue;
+    background: #29ff99;
+    overflow: /*auto=si hay ecxeso de contenido pone una barra de navegacion*/ /*scroll=pone la barra de forma obligatoria*/ scroll;
+    /*overflow: hidden; el resto del contenido se oculta*/
+}
+.contenedor{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border: 4px solid white;
+    background: rgb(39, 39, 163);
+    width: 90%;
+}
+.contenedor img{
+    float: right;
+    width: 300px;
+}
+.caja-texto{
+    padding: 20px;
+}
+.caja-texto::first-line{
+    color: rgb(75, 75, 75);
+    font-size: 4em;
+}
+.caja-texto::first-letter{
+    color: hotpink;
+}/*
+form{
+    margin: 100px auto;
+    display: block;
+    background-color: khaki;
+    padding: 20px;
+    width: 50%;
+}
+input{
+    color: black;
+    padding: 6px;
+    width: 100%;
+}
+input:focus{
+    background: blue;
+}
+input::placeholder{
+    color: red;
+}
+input::selection{
+    color: #29ff29;
+    background: #2121aa;
+}
+div p{
+    margin: 100px;
+}
+b{ 
+    background: #4fffff;
+
+}
+b::before{
+    content: "me llamo Pablo";
+    color: #000000;
+}
+b::after{
+    content: "el pibe";
+    color: #000000;
+}
+div p:hover{
+    background: #ffff00;
+}
+div p b:hover{
+    background: #ffff00;
+}
+.contenedorgenerico{
+    width: 200px;
+    height: 100px;
+    padding: 30px;
+    display: inline-block;
+    border: solid red;
+    background: #ffffff;
+}
+div a{
+    background: #ffffff;
+    color: black;
+    border: solid #ff0000;
+}
+div a:link{
+    color: #ff0000;
+}*/
+.caja-imagen{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+.caja-imagen img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border: solid #ff0000;
+    object-position: center;
+}
+
+.nav__responsive-ul{
+    display: none;
+}
+.nav{
+    background: #7788ee;
+}
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+}
+.nav__li:hover > a{
+    color: #555;
+}
+.nav__li:hover > li{
+    color: #bbb;
+}
+.nav__li a{
+    text-decoration: none;
+}
+.nav__li i{
+    box-sizing: border-box;
+    text-align: left;
+    margin-left: 7px;
+}
+.nav__responsive-buttom-container{
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+    background-color: #7788ee;
+    margin-top: -37px;
+}
+.nav__responsive-buttom{
+    padding: 6px 25px;
+    text-align: right;
+    width: 100%;
+}
+@media only screen and (max-width: 500px){
+    .nav__ul{
+        display: none;
+    }
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;
+        background-color: #7788ee;
+        width: 100%;
+        margin-top: 37px;
+    }
+    .nav{
+        height: 40px;
+        width: 100%;
+        background-color: #4488ee;
+    }
+    .nav__responsive-li{
+        width: 100%;
+        padding: 9px 20px;
+    }
+    .nav__responsive-li i{
+        box-sizing: border-box;
+        text-align: left;
+        margin-left: 7px;
+        width: 30px;
+        color: #112266;
+    }   
+    .nav__responsive-li a{
+        text-decoration: none;
+        color: #112266;
+    } 
+    .nav__li-container{
+        position: relative;
+        top: -500px;
+        height: 100vh;
+    }
+    .nav__responsive-ul:hover > .nav__li-container{
+      top: 0%;
+    }
+}
+
+.flex-container{
+    display: flex;
+}
+.flex-item{
+    background: #4488ee;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-item__ejemplo{
+    background: #4488ee;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.flex-container__gorw{
+    display: flex;
+}
+.flex-item__grow{
+    background: #4488ee;
+    padding: 10px;
+    margin: 10px;
+    height: 90px;
+    width: 120px;
+    overflow: scroll;
+    flex-grow: 1;
+}
+.flex-item__grow__uno{
+    background: #4488ee;
+    padding: 10px;
+    margin: 10px;
+    height: 90px;
+    width: 120px;
+    overflow: scroll;
+    flex-grow: 3;
+}
+.flex-item__grow__dos{
+    background: #4488ee;
+    padding: 10px;
+    margin: 10px;
+    height: 90px;
+    width: 120px;
+    overflow: scroll;
+    flex-grow: 2;
+}
+
+.form__flex-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #555;
+    margin: 40px;
+    border: 4px solid #29ff99;
+}
+.form__flex{
+    min-width: 300px;
+    flex: 2;
+    text-align: center;
+    padding: 30px;
+    order: 2;
+}
+.form__flex textarea{
+    min-height: 250px;
+    resize: none;
+}
+.form__img{
+    flex: 1;
+    background: #29ff99;
+    border-radius: 50%;
+    margin: 30px;
+    order: 1;
+}
+.form__img img{
+    width: 100%;
+    margin: auto;
+    border-radius: 75%;
+    padding: 20px;
+    min-width: 400px;
+
+}
+.form__input{
+    width: 100%;
+    margin: 7px;
+    border: none;
+    border-bottom: 3px solid #29ff99;
+    background: transparent;
+    color: #fff;
+}
+.form__input:focus{
+    background: linear-gradient(to bottom, transparent, #333);
+    outline: none;
+    border-bottom: 3px solid #2288ee;
+}
+
+.form__input[type ="submit"]{
+    background: #29ff99;
+    border: none;
+    padding: 20px;
+}
+.grid-supercontainer{
+    padding: 30px;
+}
+.grid-container{
+    padding: 50px;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: repeat(3,1fr);;
+    grid-auto-rows: 150px;
+    grid-auto-flow: dense;
+    grid-gap: 50px;
+    background: #555;
+}
+/*.grid-container:hover{
+    padding: 50px;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-gap: 5px;
+    background: #555;
+    grid-auto-flow: dense;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}*/
+.grid-item{
+    border: 2px solid #000 ;
+    background: #28df99;
+}
+.grid-item:first-child{
+    background: #4488ee;
+}
+.grid-supercontainer-gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+}
+.grid-supercontainer-gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-supercontainer-gallery img:first-child{
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+.grid-container-head{
+    background: #444;
+    margin: 30px;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+    grid-template-rows: repeat(4,1fr);
+    height: 90vh;
+    border: 5px solid #000;
+}
+.grid-itemtwo{
+    padding: 18px;
+}
+.grid-header{
+    background: #ff0;
+    grid-area: header;
+}
+.grid-main{
+    background: #f70;
+    grid-area: main;
+    overflow: auto;
+}
+.grid-aside{
+    background: #f67;
+    grid-area: aside;
+    overflow: auto;
+}
+.grid-footer{
+    background: #29ff99;
+    grid-area: footer;
+}
+.grid-ul li{
+    display: inline-block;
+}
+
+.div-responsive{
+    background: #29ff99;
+    margin: 30px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 650px){
+    .div-responsive{
+        background: #ff0;
+    }
+}
+
+.header-responsive, .main-responsive ,.aside-responsive, .footer-responsive{
+    padding: 20px;
+}
+.header-responsive{
+    background: #78b;
+    flex-basis: 60px;
+}
+.main-responsive{
+    background: #0ff;
+    flex-basis: 400px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+.aside-responsive{
+    background: #2ee7;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.footer-responsive{
+    background: #f55;
+    flex-grow: 1;
+}
+.container-responsive{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+@media screen and (max-width: 700px){
+    .container-responsive{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 800px;
+    }
+    .header-responsive{
+        flex-basis: 100%;
+        
+    }
+    .main-responsive{
+        flex-grow: 1;
+    }
+    .aside-responsive{
+        flex-grow: 2;
+        
+    }
+    .footer-responsive{
+        flex-basis: 100%;
+        max-height: 60px;
+    }
+}
+.container-transition{
+    background: #f67;
+    height: 800px;
+    margin: 30px;
+    padding: 30px;
+}
+.box-transition{
+    background: #ff0;
+    height: 100px;
+    width: 100px;
+    transition-property: background;
+    transition-duration: 1s;
+}
+.box-transition-dos{
+    background: #ff0;
+    height: 100px;
+    width: 100px;
+    animation-name: desplazarse;
+    animation-iteration-count: 10;
+    animation-duration: 3s;
+    animation-direction: reverse;
+}
+.box-transition:hover{
+    background: #9f9;
+}
+@keyframes desplazarse {
+    from {
+        position: relative;
+        left: 0;
+    }
+    to {
+        left: 80%;
+    }
+}
+.box-transition-tres{
+    background: #ff0;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    animation-name: desplazar;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier();
+}
+@keyframes desplazar {
+    0% {
+        position: relative;
+        background: #333;
+        left: 0;
+    }
+    50%{
+        background: #1055ff;
+    }
+    100% {
+        background: #0ff;
+        left: 80%;
+    }
+}
+.box-transition-cuatro{
+    background: #ff0;
+    height: 100px;
+    width: 100px;
+    transform: translate(100px,-100px);
+}
+.box-transition-cinco{
+    background: #ff0;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    transition: transform 5s;
+    
+}
+.box-transition-cinco:hover{
+    transform: scaleY(2);
+    transform: skew(90deg);
+}
+
+:root{
+    --color-rojo: #f69;
+}
+.container-var{
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+    background: var(--color-rojo);
+}
+.container-var-dos{
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+    background: #ff0;
+}
+.container-filter{
+    filter: blur(10px);
+}
